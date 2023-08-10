@@ -561,7 +561,7 @@ const restructureListingFields = hostedListingFields => {
 };
 
 const mergeDefaultTypesAndFieldsForDebugging = isDebugging => {
-  const isDev = process.env.NODE_ENV === 'development';
+  const isDev = true;//process.env.NODE_ENV === 'development';
   return isDebugging && isDev;
 };
 
@@ -582,7 +582,7 @@ const mergeListingConfig = (hostedConfig, defaultConfigs) => {
 
   // When debugging, include default configs.
   // Otherwise, use listing types and fields from hosted assets.
-  if (mergeDefaultTypesAndFieldsForDebugging(false)) {
+  if (mergeDefaultTypesAndFieldsForDebugging(true)) {
     // Merge 2 arrays and pick only unique objects according to "key" property
     // Note: This solution prefers objects from the second array
     //       I.e. default configs override hosted asset configs if they have the same key.

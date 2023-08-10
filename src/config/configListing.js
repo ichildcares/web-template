@@ -232,46 +232,56 @@ export const listingTypes = [
       unitType: 'day',
     },
   },
-  // // Here are some examples for other listingTypes
-  // // TODO: SearchPage does not work well if both booking and product selling are used at the same time
-  // {
-  //   listingType: 'nightly-booking',
-  //   label: 'Nightly booking',
-  //   transactionType: {
-  //     process: 'default-booking',
-  //     alias: 'default-booking/release-1',
-  //     unitType: 'night',
-  //   },
-  // },
-  // {
-  //   listingType: 'hourly-booking',
-  //   label: 'Hourly booking',
-  //   transactionType: {
-  //     process: 'default-booking',
-  //     alias: 'default-booking/release-1',
-  //     unitType: 'hour',
-  //   },
-  // },
-  // {
-  //   listingType: 'product-selling',
-  //   label: 'Sell bicycles',
-  //   transactionType: {
-  //     process: 'default-purchase',
-  //     alias: 'default-purchase/release-1',
-  //     unitType: 'item',
-  //   },
-  //   stockType: 'multipleItems',
-  // },
-  // {
-  //   listingType: 'inquiry',
-  //   label: 'Inquiry',
-  //   transactionType: {
-  //     process: 'default-inquiry',
-  //     alias: 'default-inquiry/release-1',
-  //     unitType: 'inquiry-item',
-  //   },
-  //   displayPrice: false,
-  // },
+  // Here are some examples for other listingTypes
+  // TODO: SearchPage does not work well if both booking and product selling are used at the same time
+  {
+    listingType: 'nightly-booking',
+    label: 'Nightly booking',
+    transactionType: {
+      process: 'default-booking',
+      alias: 'default-booking/release-1',
+      unitType: 'night',
+    },
+  },
+  {
+    listingType: 'hourly-booking',
+    label: 'Hourly booking',
+    transactionType: {
+      process: 'default-booking',
+      alias: 'default-booking/release-1',
+      unitType: 'hour',
+    },
+  },
+  {
+    listingType: 'product-selling',
+    label: 'Sell bicycles',
+    transactionType: {
+      process: 'default-purchase',
+      alias: 'default-purchase/release-1',
+      unitType: 'item',
+    },
+    stockType: 'multipleItems',
+  },
+  {
+    listingType: 'inquiry',
+    label: 'Inquiry',
+    transactionType: {
+      process: 'default-inquiry',
+      alias: 'default-inquiry/release-1',
+      unitType: 'inquiry',
+    },
+    displayPrice: true,
+  },
+  {
+    listingType: 'inquiry-no-price',
+    label: 'Inquiry without price',
+    transactionType: {
+      process: 'default-inquiry',
+      alias: 'default-inquiry/release-1',
+      unitType: 'inquiry',
+    },
+    displayPrice: false,
+  },
 ];
 
 // SearchPage can enforce listing query to only those listings with valid listingType
