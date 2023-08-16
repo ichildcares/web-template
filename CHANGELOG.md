@@ -13,6 +13,7 @@ way to update this template, but currently, we follow a pattern:
 ---
 
 ## Upcoming version 2023-XX-XX
+
 - [change] Updates to the copy texts in the defaultMicrocopy.json file.
   [#199](https://github.com/sharetribe/web-template/pull/199)
 
